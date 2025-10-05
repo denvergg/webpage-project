@@ -18,10 +18,10 @@ body {
 }
 
 .page_links {
-    padding: 10px 9px;
+    padding: 10px 5px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 525;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     color: white;
 }
@@ -38,8 +38,9 @@ body {
 }
 
 #logout {
-    position: absolute;
-    right: 20px;
+    position: relative;
+    /* right: 10px; */
+    text-align: left;
 }
 
 #masa_icon {
@@ -50,7 +51,8 @@ body {
 }
 
 #intro_heading {
-    font-size: 125px;
+    font-size: clamp(4rem, 20vw, 9rem); /* adjusts font size
+                                             based on device width */
     font-family: "Amatic SC", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -59,7 +61,6 @@ body {
 
     color: transparent;
     position: relative;
-    top: 0px;
     background: radial-gradient(circle, green, greenyellow);
     background-clip: text;
 }
@@ -82,6 +83,8 @@ body {
 
 #ticketmaster_text {
     font-family: "Rock Salt", cursive;
+    font-size: clamp(0.9rem, 5vw, 1.6rem); /* adjusts font size
+                                             based on device width */
     font-weight: 400;
     font-style: normal;
     margin-left: 10px;
