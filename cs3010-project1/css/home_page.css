@@ -1,0 +1,91 @@
+a {
+    color: inherit; /* inherits color from parent element */
+    text-decoration: none; /* removes underline */
+}
+
+body {
+    background-color: lightgray;
+    background-image: url("../imgs/home_page_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fixed {
+    position: sticky; /* makes it take up document flow */
+    top: 0;
+    background-color: gray;
+    z-index: 1000; /* keeps navbar above all content */
+}
+
+.page_links {
+    padding: 10px 5px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 525;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+}
+
+.socials {
+    width:40px;
+    height:40px;
+    position:relative;
+}
+
+.parent {
+    height: 2vh; /* div height, scales with viewport height */
+    position: relative;
+}
+
+#logout {
+    position: relative;
+    /* right: 10px; */
+    text-align: left;
+}
+
+#masa_icon {
+    width:50px;
+    height:50px;
+    margin-right:10px;
+    margin-top:3px;
+}
+
+#intro_heading {
+    font-size: clamp(4rem, 20vw, 9rem); /* adjusts font size
+                                             based on device width */
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    -webkit-text-stroke: 2px green;
+
+    color: transparent;
+    position: relative;
+    background: radial-gradient(circle, green, greenyellow);
+    background-clip: text;
+}
+
+#youngboy_image {
+    /* scales up and down with device responsiveness */
+    height:auto;
+    width:100%;
+}
+
+#github {
+    position:absolute;
+    right:0;
+}
+
+#linkedin {
+    position:absolute;
+    right:40px;
+}
+
+#ticketmaster_text {
+    font-family: "Rock Salt", cursive;
+    font-size: clamp(0.9rem, 5vw, 1.6rem); /* adjusts font size
+                                             based on device width */
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+}
